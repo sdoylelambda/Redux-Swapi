@@ -1,8 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-
 import { CharacterList } from "../components";
-// import actions
 import { getChars } from '../actions'
 
 class CharacterListView extends React.Component {
@@ -16,7 +14,6 @@ class CharacterListView extends React.Component {
 
   render() {
     if (this.props.fetching) {
-      // return something here to indicate that you are fetching data
       return (
       <p>loading, please wait....</p>
       )
